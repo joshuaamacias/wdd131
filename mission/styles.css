@@ -1,0 +1,51 @@
+body {
+    font-family: "Times New Roman", serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body.dark {
+    background-color: #333;
+    color: white;
+}
+
+.content {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+}
+
+h1 {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #4FC3F7; /* Adjusted for better contrast */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.does-list {
+    text-align: left;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-top: 20px;
+}
