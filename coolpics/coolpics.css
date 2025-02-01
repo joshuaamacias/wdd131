@@ -40,14 +40,24 @@ nav {
     margin-top: 1rem;
 }
 
-nav a {
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Hide menu on small screens */
+.hide {
+    display: none !important;
+}
+
+.nav-links a {
     color: var(--text-light);
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
 }
 
-nav a:hover {
+.nav-links a:hover {
     text-decoration: underline;
 }
 
@@ -64,13 +74,6 @@ button.menu {
     text-align: center;
 }
 
-.nav-links {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
 main {
     text-align: center;
     padding: 2rem;
@@ -82,6 +85,7 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+/* Responsive Gallery Layout */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -118,25 +122,91 @@ footer {
     font-size: 0.9rem;
 }
 
+/* Image Viewer (Modal) */
+.viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/*  Ensure the modal is fully visible when active */
+.viewer.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.viewer-content {
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewer img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border: 4px solid white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-viewer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.close-viewer:hover {
+    background: darkred;
+}
+
+
+/* Mobile Responsive Styles */
 @media screen and (max-width: 700px) {
-    nav {
-        display: none;
-    }
-
-    button.menu {
-        display: block;
-        margin: 1rem auto;
-        text-align: center;
-    }
-
+    /* Initially hide the navigation menu */
     .nav-links {
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
         margin-top: 1rem;
     }
 
+    /* Ensure the menu button is visible */
+    button.menu {
+        display: block;
+    }
+
+    /* When the menu is toggled, make it visible */
+    .nav-links.show {
+        display: flex !important;
+    }
+}
+
+
+   
+
+    /* Single column gallery */
     .gallery {
         grid-template-columns: 1fr;
         gap: 1rem;
@@ -161,12 +231,25 @@ footer {
     }
 }
 
+/* Desktop Navigation */
 @media screen and (min-width: 700px) {
     button.menu {
         display: none;
     }
 
-    nav {
+    .nav-links {
         display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .gallery {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .gallery {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns */
     }
 }
