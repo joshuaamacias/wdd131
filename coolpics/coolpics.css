@@ -173,17 +173,15 @@ footer {
     font-size: 1.5rem;
     padding: 0.5rem 1rem;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 .close-viewer:hover {
     background: darkred;
 }
 
-
 /* Mobile Responsive Styles */
 @media screen and (max-width: 700px) {
-    /* Initially hide the navigation menu */
     .nav-links {
         display: none;
         flex-direction: column;
@@ -192,42 +190,12 @@ footer {
         margin-top: 1rem;
     }
 
-    /* Ensure the menu button is visible */
     button.menu {
         display: block;
     }
 
-    /* When the menu is toggled, make it visible */
     .nav-links.show {
         display: flex !important;
-    }
-}
-
-
-   
-
-    /* Single column gallery */
-    .gallery {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        padding: 1rem;
-    }
-
-    header h1 {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-        text-align: center;
-        margin-top: 1rem;
-    }
-
-    .gallery figure {
-        width: 90%;
-        height: auto;
-        margin: 0 auto;
     }
 }
 
@@ -238,18 +206,9 @@ footer {
     }
 
     .nav-links {
-        display: flex;
+        display: flex !important;
         flex-direction: row;
         justify-content: center;
         gap: 2rem;
-    }
-    .gallery {
-        grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    .gallery {
-        grid-template-columns: repeat(4, 1fr); /* 4 columns */
     }
 }
