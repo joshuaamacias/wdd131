@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 header {
     font-size: 2.5rem;
     text-align: center;
@@ -10,10 +11,9 @@ header {
     font-weight: bold;
 }
 
-
-
 nav {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     border-top: 2px solid #d6bebe;
     border-bottom: 2px solid #d6bebe;
     padding: 15px 0;
@@ -35,43 +35,57 @@ nav ul li a {
     font-size: 1.3rem;
 }
 
-
-
 .container {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    margin: 20px auto;
+    width: 80%;
 }
-.content {
+
+main {
     width: 70%;
 }
+
 .sidebar {
     width: 25%;
     border: 1px solid #ccc;
     padding: 10px;
 }
+
 .book-entry {
     display: flex;
     border-bottom: 1px solid #ddd;
-    padding: 15px 0;
+    padding: 25px 0;
 }
+
 .book-meta {
     width: 20%;
-    font-size: 14px;
+    font-size: 16px;
     color: #555;
+    text-align: right;
+    line-height: 1.4;
+    border-right: 2px solid #d6bebe;
+    padding-right: 10px;
+    margin-right: 10px;
 }
+
 .book-details {
-    width: 80%;
+    width: 75%;
 }
+
 .book-title {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     color: darkred;
+    margin-top: 0;
 }
+
 .book-image {
+    display: block;
     max-width: 120px;
-    margin-top: 10px;
+    margin: 10px auto 0;
 }
+
 .rating {
     color: gold;
 }
