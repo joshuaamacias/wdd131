@@ -1,0 +1,122 @@
+/* FORM */
+form {
+    position: relative;
+    width: 380px;
+    height: 340px;
+}
+
+/* FRONT CARD */
+#cardFront {
+    background-color: lightgray;
+    position: absolute;
+    top: 40px; /* Move it down */
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    padding: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+}
+
+#cardFront p {
+    grid-column: 1 / 2;
+    margin: 0;
+    align-self: center;
+}
+
+.card-image {
+    grid-column: 2 / 3;
+    justify-self: end;
+    align-self: center;
+}
+
+/* BACK CARD */
+#cardBack {
+    background-color: lightgray;
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    z-index: 1;
+    width: 100%;
+    height: 250px; /* Make back card bigger */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden; /* Ensures magnetic strip doesn't overflow */
+}
+
+#magneticStrip {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+
+}
+
+#cvcContainer {
+    position: absolute;
+    bottom: 40px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+#cvcContainer input {
+    width: 60px;
+    height: 25px;
+    text-align: center;
+}
+
+/* INPUTS */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.full-width {
+    grid-column: 1 / 3;
+}
+
+.half-width {
+    grid-column: span 1;
+}
+
+.expiration {
+    display: flex;
+    gap: 5px;
+}
+
+.expiration input {
+    width: 40px;
+    text-align: center;
+}
+
+input {
+    padding: 6px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* BUTTON */
+button {
+    position: absolute;
+    bottom: -50px;
+    right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
