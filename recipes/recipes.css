@@ -1,0 +1,218 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+
+/* Root Variables for Colors and Fonts */
+:root {
+    --primary-color: #1B98E0;
+    --secondary-color: #59c3c3;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: 'Gloria Hallelujah', cursive; /* More handwritten style */
+}
+
+/* Global Styles */
+body {
+    font-family: var(--primary-font);
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: var(--text-dark);
+    text-align: center;
+    max-width: 960px; /* Prevent stretching on large screens */
+    margin: 0 auto; /* Center content */
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header h1 {
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+    margin: 5px 0;
+}
+
+/* Search Form Styles */
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.search-form input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    width: 200px;
+    box-shadow: none;
+}
+
+.search-form button {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.search-form button img {
+    height: 20px;
+    width: 20px;
+}
+
+/* Recipe Card Styles */
+.recipe-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    align-items: center;
+}
+
+.recipe-card img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.recipe-info {
+    text-align: center;
+    flex: 1;
+}
+
+.recipe-info h2 {
+    color: var(--primary-color);
+    font-family: var(--secondary-font);
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #eee;
+    color: #333;
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    font-size: 0.8em;
+}
+
+.rating {
+    margin-top: 5px;
+}
+
+.rating .icon-star {
+    color: #ffd700;
+    font-size: 18px;
+}
+
+.rating .icon-star-empty {
+    color: #ccc;
+    font-size: 18px;
+}
+
+.description {
+    color: var(--text-dark);
+    font-size: 0.9em;
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.6em;
+    color: #666;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.social {
+    margin-top: 10px;
+}
+
+.social a {
+    margin: 0 10px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.social img {
+    width: 24px;
+    height: 24px;
+    filter: grayscale(100%);
+}
+
+.social a:hover img {
+    filter: grayscale(0%);
+}
+
+/* Media Query for Screen Width 600px and Above */
+@media (min-width: 600px) {
+    .recipe-card {
+        flex-direction: row; /* Change to row layout */
+        align-items: flex-start;
+    }
+
+    .recipe-card img {
+        width: 300px;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .recipe-info {
+        text-align: left;
+    }
+}
+
+/* Media Query for Screen Width 960px and Above */
+@media (min-width: 960px) {
+    body {
+        max-width: 960px;
+        margin: 0 auto; /* Center content on wide screens */
+    }
+
+    .recipe-card {
+        padding: 30px;
+    }
+
+    .search-form input {
+        width: 300px; /* Increase search bar width */
+    }
+}
