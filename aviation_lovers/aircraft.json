@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Boeing 747",
+    "manufacturer": "Boeing",
+    "type": "Commercial",
+    "year": 1970,
+    "image": "photos/boeing747.webp",
+    "summary": "The Boeing 747, known as the 'Queen of the Skies', revolutionized long-haul air travel when introduced in 1970.",
+    "details": "<p><strong>Capacity:</strong> Up to 660 passengers (in high-density configurations)</p><p><strong>Range:</strong> ~8,000 nautical miles</p><p><strong>Engines:</strong> 4 turbofan engines</p><p><strong>Fun Fact:</strong> The 747 was the first wide-body aircraft in history.</p>"
+  },
+  {
+    "name": "Airbus A380",
+    "manufacturer": "Airbus",
+    "type": "Commercial",
+    "year": 2007,
+    "image": "photos/airbus_a380.jpg",
+    "summary": "The Airbus A380 is the largest passenger airliner in the world, designed for long-haul international routes.",
+    "details": "<p><strong>Capacity:</strong> Over 850 passengers (all economy)</p><p><strong>Range:</strong> 8,000 nautical miles</p><p><strong>Engines:</strong> 4 Rolls-Royce Trent 900 or Engine Alliance GP7200</p><p><strong>Fun Fact:</strong> First commercial flight was operated by Singapore Airlines.</p>"
+  },
+  {
+    "name": "Lockheed C-130 Hercules",
+    "manufacturer": "Lockheed",
+    "type": "Cargo",
+    "year": 1956,
+    "image": "photos/c130.jpeg",
+    "summary": "A military workhorse, the C-130 Hercules is a tactical airlifter used worldwide for troop and cargo transport.",
+    "details": "<p><strong>Capacity:</strong> 92 passengers or 64 airborne troops</p><p><strong>Range:</strong> 2,000+ nautical miles</p><p><strong>Engines:</strong> 4 turboprops</p><p><strong>Fun Fact:</strong> In service for over 65 years across 60+ countries.</p>"
+  },
+  {
+    "name": "Concorde",
+    "manufacturer": "Aerospatiale-BAC",
+    "type": "Commercial",
+    "year": 1976,
+    "image": "photos/concorde.webp",
+    "summary": "The Concorde was a turbojet-powered supersonic passenger airliner that flew faster than the speed of sound.",
+    "details": "<p><strong>Capacity:</strong> About 100 passengers</p><p><strong>Speed:</strong> Mach 2.04 (over 1,350 mph)</p><p><strong>Range:</strong> ~3,900 nautical miles</p><p><strong>Fun Fact:</strong> Cut the New York to London trip to ~3.5 hours.</p>"
+  },
+  {
+    "name": "Airbus Beluga",
+    "manufacturer": "Airbus",
+    "type": "Cargo",
+    "year": 1995,
+    "image": "photos/beluga.jpg",
+    "summary": "Named for its resemblance to the whale, the Beluga transports oversized aircraft parts across Europe.",
+    "details": "<p><strong>Payload:</strong> 47 tons</p><p><strong>Volume:</strong> 1,400 m\u00b3 cargo hold</p><p><strong>Fun Fact:</strong> Used to transport full A350 wings and fuselage sections.</p>"
+  },
+  {
+    "name": "Airbus A300",
+    "manufacturer": "Airbus",
+    "type": "Commercial",
+    "year": 1972,
+    "image": "photos/a300.avif",
+    "summary": "The Airbus A300 was the world's first twin-engine wide-body airliner.",
+    "details": "<p><strong>Capacity:</strong> ~266 passengers</p><p><strong>Range:</strong> ~4,000 nautical miles</p><p><strong>Fun Fact:</strong> First Airbus aircraft ever built, launched the Airbus brand in 1972.</p>"
+  },
+  {
+    "name": "Airbus A310",
+    "manufacturer": "Airbus",
+    "type": "Commercial",
+    "year": 1983,
+    "image": "photos/a310.jpg",
+    "summary": "The Airbus A310 was a shorter, more efficient variant of the A300.",
+    "details": "<p><strong>Capacity:</strong> ~280 passengers</p><p><strong>Range:</strong> ~5,000 nautical miles</p><p><strong>Fun Fact:</strong> Used as a multi-role tanker and cargo aircraft by several air forces.</p>"
+  },
+  {
+    "name": "Airbus A320",
+    "manufacturer": "Airbus",
+    "type": "Commercial",
+    "year": 1988,
+    "image": "photos/a320.jpg",
+    "summary": "The A320 is one of the best-selling commercial jets globally, known for its fly-by-wire technology.",
+    "details": "<p><strong>Capacity:</strong> 140\u2013240 passengers (A318 to A321 variants)</p><p><strong>Range:</strong> ~3,300 nautical miles</p><p><strong>Fun Fact:</strong> First commercial aircraft with full fly-by-wire controls.</p>"
+  },
+  {
+    "name": "Airbus A321",
+    "manufacturer": "Airbus",
+    "type": "Commercial",
+    "year": 1994,
+    "image": "photos/a321.webp",
+    "summary": "A stretched variant of the A320, ideal for short to medium-haul routes.",
+    "details": "<p><strong>Capacity:</strong> ~185 to 240 passengers</p><p><strong>Range:</strong> ~4,000 nautical miles (with A321XLR)</p><p><strong>Fun Fact:</strong> Popular in transatlantic low-cost service.</p>"
+  },
+  {
+    "name": "Airbus A330",
+    "manufacturer": "Airbus",
+    "type": "Commercial",
+    "year": 1994,
+    "image": "photos/a330.webp",
+    "summary": "A wide-body twinjet used for medium to long-haul routes.",
+    "details": "<p><strong>Capacity:</strong> ~250\u2013440 passengers</p><p><strong>Range:</strong> ~7,200 nautical miles</p><p><strong>Fun Fact:</strong> One of Airbus\u2019s most versatile aircraft in both cargo and passenger versions.</p>"
+  },
+  {
+    "name": "Airbus A340",
+    "manufacturer": "Airbus",
+    "type": "Commercial",
+    "year": 1993,
+    "image": "photos/a340.jpg",
+    "summary": "A four-engine long-haul airliner ideal for ultra-long range flights.",
+    "details": "<p><strong>Capacity:</strong> ~250\u2013375 passengers</p><p><strong>Range:</strong> ~7,900 nautical miles</p><p><strong>Fun Fact:</strong> Known for its quiet cabin and non-stop intercontinental service.</p>"
+  },
+  {
+    "name": "Airbus A350",
+    "manufacturer": "Airbus",
+    "type": "Commercial",
+    "year": 2015,
+    "image": "photos/a350.jpg",
+    "summary": "The A350 is a modern long-haul aircraft made from carbon-fiber-reinforced composites.",
+    "details": "<p><strong>Capacity:</strong> ~300\u2013410 passengers</p><p><strong>Range:</strong> ~9,700 nautical miles</p><p><strong>Fun Fact:</strong> Competes directly with Boeing\u2019s 787 and 777.</p>"
+  },
+  {
+    "name": "Boeing 707",
+    "manufacturer": "Boeing",
+    "type": "Commercial",
+    "year": 1958,
+    "image": "photos/b707.jpg",
+    "summary": "The Boeing 707 launched the jet age in commercial aviation.",
+    "details": "<p><strong>Capacity:</strong> ~150 passengers</p><p><strong>Range:</strong> ~5,000 nautical miles</p><p><strong>Fun Fact:</strong> First successful commercial jetliner by Boeing.</p>"
+  },
+  {
+    "name": "Boeing 717",
+    "manufacturer": "Boeing",
+    "type": "Commercial",
+    "year": 1999,
+    "image": "photos/b717.jpg",
+    "summary": "A small, efficient regional jet originally developed as the MD-95.",
+    "details": "<p><strong>Capacity:</strong> ~110 passengers</p><p><strong>Range:</strong> ~2,060 nautical miles</p><p><strong>Fun Fact:</strong> Last commercial airliner produced at Long Beach.</p>"
+  },
+  {
+    "name": "Boeing 727",
+    "manufacturer": "Boeing",
+    "type": "Commercial",
+    "year": 1963,
+    "image": "photos/b727.webp",
+    "summary": "A trijet designed for smaller airports and shorter runways.",
+    "details": "<p><strong>Capacity:</strong> ~149 passengers</p><p><strong>Range:</strong> ~2,700 nautical miles</p><p><strong>Fun Fact:</strong> First commercial airplane to reach 1,000 sales.</p>"
+  },
+  {
+    "name": "Boeing 737",
+    "manufacturer": "Boeing",
+    "type": "Commercial",
+    "year": 1968,
+    "image": "photos/b737.jpeg",
+    "summary": "The most produced commercial aircraft in aviation history.",
+    "details": "<p><strong>Capacity:</strong> 85\u2013230 passengers (varies by variant)</p><p><strong>Range:</strong> ~3,000\u20133,850 nautical miles</p><p><strong>Fun Fact:</strong> Over 11,000 built and counting.</p>"
+  },
+  {
+    "name": "Boeing 757",
+    "manufacturer": "Boeing",
+    "type": "Commercial",
+    "year": 1983,
+    "image": "photos/b757.avif",
+    "summary": "A narrow-body airliner with long-range capability and excellent performance.",
+    "details": "<p><strong>Capacity:</strong> ~200 passengers</p><p><strong>Range:</strong> ~3,900 nautical miles</p><p><strong>Fun Fact:</strong> Used extensively for transatlantic flights.</p>"
+  },
+  {
+    "name": "Boeing 767",
+    "manufacturer": "Boeing",
+    "type": "Commercial",
+    "year": 1982,
+    "image": "photos/b767.jpg",
+    "summary": "A wide-body aircraft used for both passenger and cargo operations.",
+    "details": "<p><strong>Capacity:</strong> ~200\u2013375 passengers</p><p><strong>Range:</strong> ~5,990 nautical miles</p><p><strong>Fun Fact:</strong> Still used today by UPS, FedEx, and many airlines.</p>"
+  },
+  {
+    "name": "Boeing 777",
+    "manufacturer": "Boeing",
+    "type": "Commercial",
+    "year": 1995,
+    "image": "photos/b777.jpg",
+    "summary": "A long-range wide-body twinjet known for its efficiency and capacity.",
+    "details": "<p><strong>Capacity:</strong> ~314\u2013396 passengers</p><p><strong>Range:</strong> ~8,555 nautical miles</p><p><strong>Fun Fact:</strong> First commercial aircraft fully designed with CAD (computer-aided design).</p>"
+  },
+  {
+    "name": "Boeing 787 Dreamliner",
+    "manufacturer": "Boeing",
+    "type": "Commercial",
+    "year": 2011,
+    "image": "photos/b787.webp",
+    "summary": "A fuel-efficient, long-range aircraft with composite materials and improved cabin comfort.",
+    "details": "<p><strong>Capacity:</strong> ~242\u2013330 passengers</p><p><strong>Range:</strong> ~7,355\u20137,635 nautical miles</p><p><strong>Fun Fact:</strong> First airliner with an all-composite fuselage.</p>"
+  }
+]

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aviation Lovers | Browse Aircraft</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <!-- Replace with your logo image -->
+      <img src="photos/aviationlovers.jpg" alt="Aviation Lovers Logo" />
+    </div>
+    <h1 class="site-title">Aviation Lovers</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="browse.html" class="active">Browse Aircraft</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Browse Section -->
+  <section class="browse container">
+    <h1>Browse Aircraft</h1>
+    <form id="filterForm">
+      <label for="manufacturer">Manufacturer:</label>
+      <select id="manufacturer">
+        <option value="">All</option>
+        <option value="Boeing">Boeing</option>
+        <option value="Airbus">Airbus</option>
+        <option value="Lockheed">Lockheed</option>
+        <option value="Aerospatiale-BAC">Aerospatiale-BAC</option>
+        <!-- Add more as needed -->
+      </select>
+
+      <label for="type">Type:</label>
+      <select id="type">
+        <option value="">All</option>
+        <option value="Commercial">Commercial</option>
+        <option value="Military">Military</option>
+        <option value="Cargo">Cargo</option>
+        <!-- Add more as needed -->
+      </select>
+
+      <label for="year">Year:</label>
+      <input type="number" id="year" placeholder="e.g. 1990" />
+
+      <button type="submit">Filter</button>
+    </form>
+
+    <div id="aircraftList" class="aircraft-list">
+      <!-- Dynamically generated aircraft cards will appear here -->
+      
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Aviation Lovers</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

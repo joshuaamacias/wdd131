@@ -1,0 +1,257 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fdfdfd;
+  color: #353535;
+}
+
+/* Header layout */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0e72bd;
+  padding: 1rem 2rem;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+}
+
+header nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #0e72bd;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  background-color: #e2e2e2;
+}
+
+
+/* Logo on the left */
+.logo img {
+  height: 50px;
+}
+
+/* Centered title */
+.site-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Right-aligned button */
+.browse-btn {
+  background-color: #ffffff;
+  color: #0e72bd;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.browse-btn:hover {
+  background-color: #e2e2e2;
+}
+
+
+/* Section Title (in main) */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 0 1.5rem;
+  color: #0e72bd;
+}
+
+
+/* Main Content Layout */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Info Block Layout */
+.info-block {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+  gap: 1.5rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 2rem;
+}
+
+.info-block:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* Image Styling */
+.info-image img {
+  width: 280px;
+  max-width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.info-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Text Section */
+.info-text {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.info-text h2 {
+  font-size: 1.6rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.info-text strong {
+  color: #222;
+}
+
+.info-text ul {
+  margin-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.info-text ul li {
+  margin-bottom: 0.5rem;
+}
+
+.summary {
+  margin-bottom: 0.5rem;
+}
+
+/* Toggle Button */
+.toggle-text {
+  margin-top: 1rem;
+  padding: 0.4rem 1rem;
+  background-color: #353535;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-text:hover {
+  background-color: #1a1a1a;
+}
+
+/* Footer */
+footer {
+  background-color: #353535;
+  color: #fdfdfd;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 4px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .info-block {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .info-image img {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 1rem;
+  }
+
+  .info-text h2 {
+    text-align: center;
+  }
+}
+
+.aircraft-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.aircraft-card {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.aircraft-card:hover {
+  transform: scale(1.02);
+}
+
+.aircraft-card img {
+  max-width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
